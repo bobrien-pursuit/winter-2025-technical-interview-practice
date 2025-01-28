@@ -13,8 +13,14 @@ console.log(asterisks(3), 'should equal ***');
 // 2. Given an integer, n, between 3 and 100,
 // return a line n characters long where the first and last character are '*' and all the middle characters are a space.
 
+function spaces(n) {
+    return '*' + new Array(n - 2).fill(' ').join('') + '*';
+}
+
 // 5 => '*   *'
 // 12 => '*          *'
+console.log(spaces(5), 'should equal *   *');
+console.log(spaces(12), 'should equal *          *');
 
 // 3. Given two integers, n and m, create n lines of m characters. The first and last line should be made of all '*' and all the middle lines should start and end with '*' and have all spaces in the middle
 
