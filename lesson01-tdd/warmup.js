@@ -1,5 +1,11 @@
 // 1. Given an integer, n,  between 3 and 100, return a line with n '*' characters
+function asterisks(n) {
+    return new Array(n).fill('*').join('');
+}
 
+console.log(asterisks(5), 'should equal *****');
+console.log(asterisks(12), 'should equal ************');
+console.log(asterisks(3), 'should equal ***');
 // 5 => '*****'
 // 12 => '************'
 // 3 => "***"
