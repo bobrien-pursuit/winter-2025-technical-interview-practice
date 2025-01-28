@@ -24,10 +24,16 @@ console.log(spaces(12), 'should equal *          *');
 
 // 3. Given two integers, n and m, create n lines of m characters. The first and last line should be made of all '*' and all the middle lines should start and end with '*' and have all spaces in the middle
 
+function box(n, m) {
+    console.log(asterisks(n));
+    for (let i = 0; i < m; i++)
+        console.log(spaces(m));
+    console.log(asterisks(n));
+}
 // 5,5 => *****
 //        *   *
 //        *   *
 //        *   *
 //        *****
-
+box(5, 5), console.log('should equal \n*****\n*   *\n*   *\n*   *\n*   *\n*   *\n*****');
 // Console.log the result of each of the above functions to test them. Run your file with node warmup.js and check the terminal for the correct output.
