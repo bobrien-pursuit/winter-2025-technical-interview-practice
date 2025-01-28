@@ -12,6 +12,10 @@
  */
 function isPalindrome(str) {
   // your code here
+  return str === str.split('').reverse().join('');
 }
+
+console.log(isPalindrome('ada'), 'should equal true');
+console.log(isPalindrome('race a car'), 'should equal false');
 
 module.exports = isPalindrome;
